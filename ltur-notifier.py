@@ -94,6 +94,9 @@ def send_mail(cheapest):
 
     s = smtplib.SMTP(SMTP_SERVER)
     if SMTP_USER and SMTP_PASS:
+        s.ehlo()
+        s.starttls()
+        s.ehlo()
         s.login(SMTP_USER, SMTP_PASS)
     s.sendmail(msg['From'], [msg['To']], msg.as_string())
     s.quit()
