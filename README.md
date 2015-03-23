@@ -1,12 +1,11 @@
 ltur-notifier
 ================
 
-A script that sends a [Pushover](https://pushover.net/) notifiation or email to your Android fon or iPhone 
-if prices for train tickets at [l'tur](http://www.ltur.com/de/bahn.html?omnin=DB-DE) drop to the maximum you're willing to pay.
+A script that sends a [Pushover](https://pushover.net/) notifiation or email if prices for train tickets at [l'tur](http://www.ltur.com/de/bahn.html?omnin=DB-DE) drop to the maximum you're willing to pay.
 
 Note
 -------
-Work in progress. Developed using Python 2.7 on Mac OS X 10.6 and Ubuntu 14.04 LTS
+Work in progress. Developed using Python 2.7 on Windows
 
 This script is not being maintained and tested regularly. If it does not work properly anymore, please open an issue.
 
