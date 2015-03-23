@@ -44,11 +44,9 @@ def main():
             current = datetime.datetime(day.year, day.month, day.day) + datetime.timedelta(0, 0, 0, 0, 0, 8 * dayUnit)
             current_date = current.strftime("%d.%m.%Y")
             current_time = current.strftime("%H:%M")
+            # print(current.isoformat() + " [OK]")
             entries.extend(parse_cheap_entries(submit_form(current_date, current_time)))
-    print(entries)
     cheap_entries = [elem for elem in entries if elem['price'] < max_price] # filter(lambda x: x['price'] > max_price, entries)
-    print(cheap_entries)
-
     cheapest = max_price
     for entry in cheap_entries:
         if entry['price'] < cheapest:
