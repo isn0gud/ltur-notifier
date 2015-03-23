@@ -9,9 +9,10 @@ to_city = 'Augsburg Hbf'
 
 # default to tomorrow
 #on_date = ( datetime.date.today() + datetime.timedelta( days=1 )).strftime( '%d.%m.%Y' )
-on_date = '25.03.2015'
 
-at_time = '20:12'
+earliest_date = '24.03.2015'
+latest_date = '29.03.2015'
+
 max_price = 40.0
 
 # set the mode of notification: pushover or email
